@@ -51,7 +51,7 @@ export async function POST(req: NextRequest) {
           ingredients: [],
           tally: { good: 0, neutral: 0, flagged: 0, unclassified: 0 },
           disclaimer:
-            "Informational only â€” not medical or legal advice. Always check the physical label, as ingredients can change between batches.",
+            "Informational only” not medical or legal advice. Always check the physical label, as ingredients can change between batches.",
         },
         { status: 200 }
       );
@@ -71,7 +71,7 @@ export async function POST(req: NextRequest) {
         ingredients: [],
         tally: { good: 0, neutral: 0, flagged: 0, unclassified: 0 },
         disclaimer:
-          "Informational only â€” not medical or legal advice. Always check the physical label, as ingredients can change between batches.",
+          "Informational only ” not medical or legal advice. Always check the physical label, as ingredients can change between batches.",
       });
     }
 
