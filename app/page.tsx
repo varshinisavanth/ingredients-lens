@@ -174,20 +174,18 @@ export default function Home() {
 
                 <div className="scoreCircle">
 
-                  {Math.max(
-                    0,
-                    Math.min(
-                      100,
-                      (
-                        (
-                          result.tally.good * 100
-                        ) /
-                        (
-                          result.ingredients.length || 1
-                        )
-                      ).toFixed(0)
-                    )
-                  )}
+                  {
+  Math.max(
+    0,
+    Math.min(
+      100,
+      Math.round(
+        (result.tally.good * 100) /
+          (result.ingredients.length || 1)
+      )
+    )
+  )
+}
 
                 </div>
 
